@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>nhóm 5G lớp 12.2| THPT Huỳnh Văn Nghệ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+#home {
+    background-image: url("truong.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* QUAN TRỌNG */
+
+    min-height: 100vh;
+    color: white;
+}
+#home {
+    position: relative;
+    background: url("truong.jpg") center / cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+#home * {
+    position: relative;
+}
+
+
+
+
+#home {
+    background-image: url("truong.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-right a:hover {
+    color: #d1fae5;
+    text-decoration: underline;
+}
+
+
+
+.footer {
+    background: linear-gradient(135deg, #0f766e, #0d9488);
+    color: #fff;
+    padding: 40px 20px 15px;
+    margin-top: 60px;
+}
+
+.footer-box {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Bên trái */
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+.footer-left h3 {
+    margin: 8px 0 5px;
+}
+
+.footer-left p {
+    margin: 3px 0;
+    opacity: 0.9;
+}
+
+/* Bên phải */
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-right h4 {
+    margin-bottom: 12px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-right li:hover {
+    transform: translateX(6px);
+    opacity: 0.85;
+}
+
+/* Dòng cuối */
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    opacity: 0.85;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
+}
+
+
+
+
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;              /* khoảng cách giữa 2 video */
+    flex-wrap: wrap;        /* xuống hàng nếu màn hình nhỏ */
+    margin-top: 20px;
+}
+
+.video-row video {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: center;   /* CANH GIỮA NGANG */
+    align-items: center;       /* CANH GIỮA DỌC */
+    gap: 15px;
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #2e7d32;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.member-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(135deg, #6fa89a, #9fc9bb);
+    border-radius: 25px;
+
+    padding: 40px 60px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.member-text {
+    color: white;
+    max-width: 55%;
+}
+
+.member-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.member-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.member-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+}
+.dangki-box {
+    background: rgba(0, 0, 0, 0.6); /* nền đen mờ */
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    color: white;
+}
+
+.dangki-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+.dangki-box button {
+    width: 100%;
+    padding: 10px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dangki-bg {
+    background-image: url("998.jpg"); /* tên ảnh */
+    background-size: cover;           /* phủ kín màn hình */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;     /* giữ nguyên khi lướt */
+
+    min-height: 100vh;                /* full màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-image: url("images/998.jpg"); /* đường dẫn ảnh */
+    background-size: cover;        /* ảnh phủ full màn hình */
+    background-position: center;   /* căn giữa */
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  /* CỐ ĐỊNH ẢNH */
+}
+.content {
+    background: rgba(255, 255, 255, 0.8); /* nền mờ để đọc chữ */
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== FOOTER GỌN ===== */
+.footer {
+    background: #1b7f5a;
+    color: white;
+    padding: 18px 10px;   /* giảm chiều cao */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.footer h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.footer p {
+    margin: 4px 0;       /* chữ sát lại */
+}
+
+.footer h4 {
+    margin: 10px 0 6px;
+    font-size: 16px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 3px 0;       /* tên thành viên gọn */
+}
+
+.footer .banquyen {
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+
+/* GIỚI THIỆU – giãn cách nội dung */
+#about .box p {
+    Margin: 8px 0;      /* tạo khoảng cách giữa các dòng */
+    Line-height: 1.8;   /* giãn dòng, không dính chữ */
+}
+/* Hoạt động phong trào – giãn cách nội dung */
+#activity h1 {
+    Margin: 20px 0 10px;
+    Line-height: 1.4;
+}
+
+#activity p {
+    Margin: 8px 0;
+    Line-height: 1.8;
+}
+
+#facility .box p {
+    Margin-bottom: 12px;   /* khoảng cách giữa các dòng */
+    Line-height: 1.7;      /* giãn dòng cho dễ đọc */
+}
+
+#activity h1 {
+  Font-size: 18px;
+  Margin: 16px 0 6px;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#ffffff;color:#333}
+
+/* ===== LÁ RƠI ===== */
+
+.heart {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    animation: fall linear infinite;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(110vh);
+        opacity: 0.7;
+    }
+}
+
+/* ===== HEADER ===== */
+header{
+  background:linear-gradient(135deg,#dff5df,#ffffff);
+  margin:15px;
+  padding:25px;
+  border-radius:22px;
+  box-shadow:0 10px 30px rgba(0,150,90,.25);
+  text-align:center;
+}
+header h1{color:#1e7f4d;font-size:26px}
+header p{margin-top:6px;color:#666}
+
+/* ===== MENU ===== */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:20px 0;
+  flex-wrap:wrap;
+}
+nav button{
+  border:none;
+  background:#ffffff;
+  color:#1e7f4d;
+  font-weight:600;
+  padding:8px 18px;
+  border-radius:20px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+nav button.active,
+nav button:hover{
+  background:#cceedd;
+}
+
+/* ===== SECTION ===== */
+section{
+  display:none;
+  margin:0 15px 40px;
+  animation:fade .4s ease;
+}
+section.active{display:block}
+@keyframes fade{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+.title{
+  color:#1e7f4d;
+  font-weight:700;
+  margin-bottom:15px;
+  font-size:18px;
+}
+
+/* ===== BOX ===== */
+.box{
+  background:#ffffff;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.card{
+  height:140px;
+  border-radius:16px;
+  background:#e8f7ef;
+}
+
+/* ===== FORM ===== */
+form input,form textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border-radius:12px;
+  border:1px solid #bfe6cf;
+}
+form button{
+  background:#1e7f4d;
+  color:#ffffff;
+  border:none;
+  padding:10px;
+  border-radius:14px;
+  font-weight:600;
+  width:100%;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:13px;
+  color:#1e7f4d;
+}
+</style>
+</head>
+
+<body>
+<!-- LÁ RƠI -->
+<script>
+const icons = [" 🌿"];
+
+
+for (let i = 0; i < 15; i++) {
+    let item = document.createElement("div");
+    item.className = "heart";
+    item.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+
+    item.style.left = Math.random() * 100 + "vw";
+    item.style.animationDuration = 5 + Math.random() * 6 + "s";
+    item.style.fontSize = 20 + Math.random() * 20 + "px";
+
+    document.body.appendChild(item);
+}
+</script>
+
+<header class="site-header">
+    <img src="133.jpg" class="logo">
+
+    <div class="header-text">
+        <h1>THPT HUỲNH VĂN NGHỆ</h1>
+        <p>🍀 nhóm 5G lớp 12.2 – Thanh xuân xanh 🍀</p>	
+    </div>
+	<img src="132.jpg" class="logo">
+</header>
+<nav>
+  <button onclick="showPage('home')" class="active">Trang chủ</button>
+  <button onclick="showPage('about')">Giới thiệu</button>
+  <button onclick="showPage('activity')">Phong trào</button>
+  <button onclick="showPage('facility')">Cơ sở vật chất</button>
+  <button onclick="showPage('class12_2')"> Lớp 12.2</button>
+  <button onclick="showPage('register')">Đăng ký</button>
+</nav>
+<!-- TRANG CHỦ -->
+<section id="home" class="active">
+  <div class="title">🏫 TRANG CHỦ</div>
+
+<video controls
+  style="
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  ">
+<source src="toancanh.mp4" type="video/mp4">
+</video>
+
+   <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+     <a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank"
+       style="padding:10px 14px; background:#e9fff1; border-radius:14px; text-decoration:none; color:#1e7f4d; font-weight:600;">     
+   <div class="box">   
+	<ul style="margin-left:20px; line-height:1.8;">	
+   <strong>Lịch sử hình thành và phát triển:</strong>
+      <li>Thành lập: Trường được thành lập vào năm 1959 tại thị xã Tân Uyên, Bình Dương, lấy tên của nhà thơ, nhà cách mạng Huỳnh Văn Nghệ.</li>
+      <li>Giai đoạn đầu và phát triển:
+           Hơn 50 năm hình thành và phát triển, trường luôn đẩy mạnh phong trào thi đua dạy tốt - học tốt.
+           Cơ sở vật chất ngày càng được đầu tư hiện đại, đáp ứng yêu cầu giáo dục trong thời kỳ công nghiệp hóa, hiện đại hóa.</li>
+   <strong>Thành tích nổi bật:</strong> 
+      <li>1999: Vinh dự được Chủ tịch nước tặng Huân chương Lao động hạng Ba.</li> 
+      <li>1997-2003: Được Thủ tướng Chính phủ tặng Bằng khen.</li>
+      <li> 2010: Được UBND tỉnh Bình Dương công nhận là trường đạt chuẩn quốc gia.</li>
+      <li>Năm học 2014-2015 (kỷ niệm 55 năm), trường có 29 lớp, hơn 850 học sinh và 88 cán bộ, giáo viên, nhân viên.</li>
+   <strong> Hoạt động hiện tại: </strong> 
+      <li>Tiếp tục nâng cao chất lượng giáo dục đạo đức, nhân cách và kỹ năng sống cho học sinh.</li>
+      <li>Tổ chức các hoạt động ý nghĩa như họp mặt cựu giáo viên, cựu học sinh, trao học bổng.  </li>	
+      <li> Trường THPT Huỳnh Văn Nghệ là một trong những ngôi trường
+      có bề dày truyền thống giáo dục tại tỉnh Bình Dương. Trường không ngừng
+      đổi mới phương pháp dạy học, chú trọng phát triển toàn diện</li>
+    <b>đức – trí – thể – mỹ</b> cho học sinh. 
+      Với phương châm giáo dục
+    <b>“Học sinh là trung tâm – Chất lượng là mục tiêu”</b>,
+      nhà trường luôn tạo điều kiện để học sinh phát huy năng lực cá nhân,
+      rèn luyện kỹ năng sống và tinh thần trách nhiệm với cộng đồng.
+    </p>  
+      <li>🌱 Môi trường học tập <b>xanh – sạch – đẹp</b></li>
+      <li>📚 Đội ngũ giáo viên <b>tận tâm, giàu kinh nghiệm</b></li>
+      <li>🏫 Cơ sở vật chất ngày càng <b>hiện đại</b></li>
+      <li>🎯 Nhiều hoạt động ngoại khóa và phong trào sôi nổi</li>
+    </ul>
+    <div style="text-align:center; margin-top:20px;">                                                                                                                                                                                
+    
+<video controls
+  style="
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  ">
+  <source src="745.mp4" type="video/mp4">
+</video>
+
+   <p>
+    Trường <strong>THPT Huỳnh Văn Nghệ</strong> là ngôi trường giàu truyền thống,
+    chú trọng giáo dục toàn diện, xây dựng môi trường học tập
+    <b>xanh – sạch – đẹp</b>, năng động và sáng tạo cho học sinh.
+  </p>
+<section class="member-banner">
+    <div class="member-text">
+        <h1> Vũ Thanh Bình</h1>
+        <p>
+            Trưởng nhóm 5G<br>
+             nhóm trưởng, phụ trách điều phối công việc và xây dựng nội dung chính cho website<br>
+            
+        </p>
+    </div>
+    <div class="member-image">
+        <img src="b.jpg">
+    </div>
+</section>
+
+<section class="member-banner">
+    <div class="member-text">
+        <h1>Nguyễn Văn Phong</h1>
+        <p>
+            Thành viên nhóm 5G<br>
+            Nhiệt tình trong hoạt động phong trào,<br>
+            luôn hỗ trợ tốt cho nhóm.
+        </p>
+    </div>
+    <div class="member-image">
+        <img src="z.jpg">
+    </div>
+</section>
+
+<section class="member-banner">
+    <div class="member-text">
+        <h1>Trần Phạm Minh Khang</h1>
+        <p>
+            Thành viên nhóm 5G<br>
+            Có tinh thần học hỏi cao,<br>
+            yêu thích công nghệ thông tin.
+        </p>
+    </div>
+    <div class="member-image">
+        <img src="k.jpg">
+    </div>
+</section>
+
+<section class="member-banner">
+    <div class="member-text">
+        <h1>Ngọ Thị Thương</h1>
+        <p>
+            Thành viên nhóm 5G<br>
+            Năng động, hòa đồng,<br>
+            tích cực tham gia các hoạt động.
+        </p>
+    </div>
+    <div class="member-image">
+        <img src="t.jpg">
+    </div>
+</section>
+
+<section class="member-banner">
+    <div class="member-text">
+        <h1>Mai Nguyễn Hoàng Phúc</h1>
+        <p>
+            Thành viên nhóm 5G<br>
+            Chăm chỉ, trách nhiệm,<br>
+            luôn hoàn thành tốt nhiệm vụ.
+        </p>
+    </div>
+    <div class="member-image">
+        <img src="r.jpg">
+     </div>
+     </section>
+     </div>  
+     </section>
+
+           🌐 Website Trường
+    </a>
+    <a href="https://www.facebook.com/" target="_blank"
+       style="padding:10px 14px; background:#e9fff1; border-radius:14px; text-decoration:none; color:#1e7f4d; font-weight:600;">
+      📘 Facebook
+    </a>
+    <a href="https://youtu.be/z4oD5hXAZG8?si=DT043IoWgJutIdOX" target="_blank"
+       style="padding:10px 14px; background:#e9fff1; border-radius:14px; text-decoration:none; color:#1e7f4d; font-weight:600;">
+      ▶️ Video YouTube
+    </a>
+  </div>
+   </div>
+   </div>
+</section>
+<!-- GIỚI THIỆU -->
+<section id="about">
+  <div class="title">📘 GIỚI THIỆU</div>
+  <h2 class="section-title">
+  🎉 Lễ Kỷ niệm 65 năm thành lập Trường THPT Huỳnh Văn Nghệ
+</h2>
+
+<video controls
+  style="
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  ">
+  <source src="kiniem.mp4" type="video/mp4">
+</video>
+    <p class="video-caption">
+  Video ghi lại những khoảnh khắc trang trọng trong <strong>Lễ Kỷ niệm 65 năm thành lập Trường THPT Huỳnh Văn Nghệ</strong>,
+  kết hợp chào mừng <strong>Ngày Nhà giáo Việt Nam 20/11</strong> – dịp tri ân các thế hệ thầy cô giáo đã cống hiến cho sự nghiệp giáo dục.
+</p>
+ </div>
+  <div class="box">
+    <p>
+     <strong>Trường THPT Huỳnh Văn Nghệ</strong> là ngôi trường có bề dày
+     <b>hơn 60 năm hình thành và phát triển</b>, là một trong những điểm sáng
+     của ngành giáo dục tỉnh Bình Dương.
+     </p>
+    <p>
+      Trải qua nhiều giai đoạn xây dựng và trưởng thành, nhà trường luôn giữ vững
+      tinh thần <b>kỷ cương – trách nhiệm – sáng tạo</b>, không ngừng đổi mới
+      phương pháp dạy học nhằm nâng cao chất lượng giáo dục toàn diện cho học sinh.
+    </p>
+    <ul style="margin-left:20px; line-height:1.9;">
+      <li>🏅 <b>Vinh dự:</b> Đạt chuẩn quốc gia, nhận Huân chương Lao động hạng Ba</li>
+      <li>👩‍🏫 <b>Chất lượng:</b> 97% giáo viên đạt chuẩn và trên chuẩn</li>
+      <li>🎓 <b>Thành tích:</b> Tỷ lệ đỗ đại học – cao đẳng ngày càng tăng</li>
+      <li>🌱 <b>Môi trường:</b> Xanh – sạch – đẹp, an toàn và thân thiện</li>
+    </ul>
+    <p>
+      Trường mang tên nhà thơ – chiến sĩ cách mạng <strong>Huỳnh Văn Nghệ</strong>,
+      là niềm tự hào, đồng thời là động lực để các thế hệ học sinh không ngừng
+      phấn đấu, rèn luyện và cống hiến cho quê hương, đất nước.  
+    </p>	
+	<img src="134.jpg" alt="Trường học" width="500" height="300">	
+	<img src="135.jpg" alt="Trường học" width="500" height="300">	
+	<img src="136.jpg" alt="Trường học" width="500" height="300">	
+	<img src="136.jpg" alt="Trường học" width="750" height="500">	
+	<img src="122.jpg" alt="Trường học" width="750" height="500">	
+    <p>	 <strong>Đội ngũ giáo viên và công tác giảng dạy</strong></p>
+    <p>  <strong> Đội ngũ vững mạnh:</strong> Nhà trường sở hữu đội ngũ cán bộ quản lý và giáo viên ổn định, 
+           đạt chuẩn và trên chuẩn về trình độ chuyên môn. Các tổ chuyên môn như Toán, Ngữ văn, Anh văn, 
+           Sử - Địa - GDCD, Lý - Tin - CNCN, Hóa - Sinh - CNNN và Thể dục - QPAN luôn tích cực đổi mới phương pháp dạy học.</p>	
+    <p>  <strong>Chất lượng giảng dạy:</strong> Nhà trường thực hiện nghiêm túc kế hoạch giáo dục theo 
+            định hướng phát triển năng lực và phẩm chất học sinh. Trong năm học 2024 - 2025, trường duy trì chất 
+           lượng đào tạo ổn định cho hơn 1.200 học sinh.</p>	
+    <p>  <strong> Công nghệ số:</strong> Trường tích cực ứng dụng công nghệ thông tin
+	       trong quản lý và giảng dạy, tiêu biểu là việc tuyên truyền sử dụng các ứng dụng công dân số.</p>		 
+	<p>  <strong>Các câu lạc bộ và hoạt động ngoại khóa</strong></p>	
+    <p>  <strong> Hệ thống Câu lạc bộ:</strong> Thông qua Đoàn trường, học sinh được tham gia 
+          vào nhiều CLB sở thích nhằm phát huy năng khiếu cá nhân và rèn luyện kỹ năng mềm.</p>	
+    <p>  <strong> Hoạt động "Về nguồn":</strong> Trường thường xuyên tổ chức các chuyến tham quan thực tế tại
+          các "địa chỉ đỏ" như Di tích lịch sử Nhà tù Phú Lợi để giáo dục truyền thống cho học sinh khối 10.</p>	
+    <p>  <strong> Phong trào Đoàn - Hội:</strong> Các hoạt động như hiến máu nhân
+          đạo, tuyên truyền phòng chống dịch bệnh (như AIDS), và các hội nghị cán bộ viên 
+          chức được tổ chức sôi nổi, tạo môi trường rèn luyện tích cực.</p>	
+    <p> <strong> Thi đua & Thể thao:</strong> Học sinh tham gia tích cực các kỳ thi học sinh giỏi, 
+         cuộc thi tiếng Anh Internet (IOE) và các phong trào thi đua tuần để nâng cao tinh thần học tập</p>		
+  </div>
+</section>
+<!-- HOẠT ĐỘNG PHONG TRÀO -->
+<section id="activity">
+  <div class="title"> 🔥HOẠT ĐỘNG PHONG TRÀO</div>
+   <img src="999.jpg" alt="Trường học" width="700" height="400">
+   <img src="997.jpg" alt="Trường học" width="700" height="400">
+           <p> Hoạt động ủng hộ bà con miền trung gặp thiên tai bão lũ của thầy cô trường thpt Huỳnh Văn Nghệ</p> 
+<h1>Phong trào Học tập và Thi đua</h1>
+          <p>“Hoa điểm tốt” & “Tuần học tốt”: Đây là phong trào xuyên suốt nhằm khích lệ tinh thần học tập. Nhà 
+		  trường thường xuyên tuyên dương những cá nhân có nhiều điểm 10 và 
+		  các tập thể lớp có nề nếp kỷ luật cao trong giờ chào cờ đầu tuần.</p>
+          <p>Câu lạc bộ Học thuật: Các CLB tiếng Anh, Văn học hay các đội
+		  tuyển học sinh giỏi là nơi các bạn có cùng đam mê hỗ trợ nhau, giúp trường
+		  luôn đạt thành tích cao trong các kỳ thi học sinh giỏi cấp Tỉnh.</p>
+<h1>Hoạt động Đoàn và Tình nguyện</h1>
+          <p>Đoàn trường là “linh hồn” của các phong trào tại đây với nhiều mô hình sáng tạo:</p>
+	      <p>Chiến dịch tình nguyện: Các hoạt động như “Ngày Thứ Bảy tình nguyện”, “Ngày Chủ
+		  nhật xanh” hay phong trào “Kế hoạch nhỏ” giúp học sinh nâng cao ý thức bảo vệ môi 
+		  trường và giữ gìn khuôn viên trường lớp.</p>
+          <p>Công trình Thanh niên: Học sinh các khóa thường cùng nhau thực hiện các công
+		  trình ý nghĩa như hàng cây xanh, ghế đá hay trang trí lớp học để 
+		  tạo dựng không gian học tập thân thiện.</p>
+	      <p>Hoạt động nhân đạo: Phong trào “Nuôi heo đất giúp bạn nghèo”, quyên
+		  góp sách giáo khoa cũ hay tham gia hiến máu nhân đạo là những nét đẹp 
+		  truyền thống mang đậm tính nhân văn của học sinh ngôi trường này.</p>
+<h1>Sân chơi Văn hóa – Thể thao</h1>
+          <p>Hội diễn văn nghệ: Đặc biệt sôi nổi vào các dịp lễ lớn như 20/11, 26/3 với
+		  các cuộc thi hát, múa, nhảy hiện đại, giúp các “tài năng nhí” tỏa sáng.</p>
+          <p>Giải thể thao truyền thống: Các giải bóng đá, bóng chuyền,
+		  kéo co thường xuyên được tổ chức, không chỉ giúp rèn luyện sức khỏe
+		  mà còn thắt chặt tình đoàn kết giữa các chi đoàn lớp.</p>
+<h1>Giáo dục Kỹ năng và Truyền thống</h1>
+	      <p>Về nguồn: Do trường mang tên Thi tướng – Anh hùng Huỳnh Văn Nghệ,
+		  các hoạt động tìm hiểu lịch sử, viếng khu tưởng niệm hay các buổi nói 
+		  chuyện chuyên đề về truyền thống quê hương luôn được nhà trường chú trọng.</p>
+	      <p>Diễn đàn thanh niên: Các buổi tọa đàm về kỹ năng sống, phòng chống tệ nạn xã hội
+		  và định hướng nghề nghiệp giúp học sinh vững vàng hơn trước khi bước vào
+		  ngưỡng cửa đại học.</p>
+          <p>Điểm nhấn: Phong trào của trường THPT Huỳnh Văn Nghệ thường 
+		  gắn liền với khẩu hiệu “Học tập và làm theo lời Bác”, giúp các 
+		  em không chỉ giỏi kiến thức mà còn đẹp về nhân cách.</p>
+<h1> Bên cạnh việc học nhà trường còn tổ chức các trương trình hoạt động trải nghiệm cho học sinh</h1>
+<img src="124.jpg" alt="Trường học" width="500" height="300">
+<img src="125.jpg" alt="Trường học" width="500" height="300">
+<img src="126.jpg" alt="Trường học" width="500" height="300">
+<h1>  Nhà trường còn tổ chức các trương trình nhớ nguồn </h1>
+
+<img src="234.jpg" alt="Trường học" width="500" height="300">
+<img src="235.jpg" alt="Trường học" width="500" height="300">
+<img src="236.jpg" alt="Trường học" width="500" height="300">
+</section>
+<!-- CƠ SỞ VẬT CHẤT --> 
+  <section id="facility">
+  <div class="title">🏫 CƠ SỞ VẬT CHẤT</div>
+  <div class="box"> 
+<h3>  📽️ Phòng học có máy chiếu, loa hỗ trợ giảng dạy.</h3>
+  
+  <img src="096.jpg" alt="Trường học" width="700" height="400">
+  <img src="097.jpg" alt="Trường học" width="700" height="400"> 
+    
+    <p>-Phòng học: Đủ ánh sáng, thoáng mát, trang thiết bị hiện đại.</p>  
+    <p>-Phòng chức năng: Phòng tin học, mỹ thuật, thí nghiệm, thư viện, y tế, nghe nhìn được đầu tư đạt chuẩn Bộ GD-ĐT.</p>
+    <p>-Khuôn viên: Rộng rãi, có cây xanh, sân bóng, sân giáo dục ngoài trời, phục vụ hoạt động thể chất và ngoại khóa.</p>
+    <p>-Thiết bị công nghệ: Ứng dụng rộng rãi giáo án điện tử, máy chiếu, TV trong giảng dạy.</p>
+    <p>-Tiêu chuẩn: Đạt chuẩn quốc gia, với diện tích đất/học sinh cao, đảm bảo không gian học tập. </p>
+      
+       <p>  🔬 Phòng thí nghiệm Lý – Hóa – Sinh đầy đủ dụng cụ.</p>
+       <p>  📚 Thư viện rộng rãi, nhiều đầu sách tham khảo.</p>
+       <p>🏀 Sân thể dục – thể thao sạch đẹp, phục vụ hoạt động phong trào.</p>
+       <p>  📽️ Phòng học có máy chiếu, loa hỗ trợ giảng dạy.</p>
+       <p> 🌳 Khuôn viên nhiều cây xanh, thoáng mát.</p>
+	
+	<h4>  💻 Phòng tin học hiện đại, máy tính tôt đáp ứng phục vụ học tập.</h4>
+<img src="may.jpg" alt="Trường học" width="600" height="300">
+<img src="may2.jpg" alt="Trường học" width="600" height="300">
+	<p> - Cơ sở vật chất trường THPT Huỳnh Văn Nghệ (Tân Uyên, Bình Dương) khang trang, hiện đại, 
+	đạt chuẩn quốc gia, gồm nhiều phòng học thoáng đãng, đầy đủ ánh sáng, phòng chức năng (tin học, thí nghiệm, 
+	y tế, thư viện, nghe nhìn) chuẩn Bộ GD-ĐT, sân trường rộng có cây xanh, bóng đá, khu hoạt động ngoại trời, áp 
+	dụng công nghệ (máy chiếu, tivi), đáp ứng tốt yêu cầu dạy và học, góp phần nâng cao chất lượng giáo dục và 
+	tạo môi trường phát triển toàn diện cho học sinh. </p>
+    
+        👉 Nhà trường luôn chú trọng đầu tư, nâng cấp cơ sở vật chất nhằm tạo môi
+        trường học tập an toàn, thân thiện và hiệu quả cho học sinh.
+    </p>
+    </div>
+    </div>
+      </section>
+	<!-- lớp 12.2 -->  
+<section id="class12_2">
+    <div class="title">❤️ Lớp 12.2</div>
+<img src="anh.jpg" alt="Trường học" width="350" height="500">
+<img src="aaa.jpg" alt="Trường học" width="350" height="500">
+<img src="iii.jpg" alt="Trường học" width="350" height="500">
+<img src="zzz.jpg" alt="Trường học" width="350" height="500">
+<h2> ❤️❤️❤️❤️❤️❤️❤️❤️️Cô Huỳnh Thị khánh trang chủ nhiệm lớp 12.2 năm học 2025-2026❤️❤️❤️❤️❤️❤️❤️❤️</h2>
+    <div class="video-row">
+        <video controls>
+            <source src="8386.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="1222.mp4" type="video/mp4">
+        </video>
+		<video controls>
+            <source src="co.mp4" type="video/mp4">
+        </video>
+		    <h2> Lớp 12.2 quyết tâm thi đỗ nguyện vọng </h2>		
+</div>	
+</section>
+</section>  
+<!-- ĐĂNG KÝ -->
+  <section id="register">
+  <div class="title">📝 ĐĂNG KÝ THÔNG TIN</div>
+  <div class="box">
+  <section class="dangki-bg">
+    <div class="dangki-box">
+        <h2>ĐĂNG KÍ THÔNG TIN</h2>      
+     <form>
+      <input type="text" placeholder="Họ và tên">
+      <input type="text" placeholder="Ngày Tháng năm sinh">
+      <input type="email" placeholder="Email">
+	  <input type="text" placeholder="Mật khẩu">
+	  <input type="text" placeholder="Tổ hợp môn học ">
+	  <input type="text" placeholder="Sở thích & năng khiếu">
+      <textarea rows="4" placeholder="Nội dung đăng ký"></textarea>
+      <button>Gửi thông tin</button>
+      </form>
+    </div>
+         </section>
+    </div>
+         </section>
+<footer class="footer">
+    <div class="footer-box">
+
+        <!-- Logo + thông tin -->
+        <div class="footer-left">
+            <img src="133.jpg" class="footer-logo">
+            <h3>Nhóm 5G – Lớp 12.2</h3>
+            <p>THPT Huỳnh Văn Nghệ</p>
+            <p>Năm học 2025 – 2026</p>
+        </div>
+
+        <!-- Thành viên -->
+        <div class="footer-right">
+            <h4>Thành viên nhóm</h4>
+            <ul>
+                <li>
+    <a href="https://www.facebook.com/share/1Br1ab17tk/" target="_blank">
+        🔎Vũ Thanh Bình
+    </a>
+</li>
+
+  <a href="https://www.facebook.com/share/17gdqrU5og/?mibextid=wwXIfr" target="_blank">
+        🔎 Nuyễn Văn Phong
+    </a>
+</li>
+ <li>
+    <a href="https://www.facebook.com/share/17gdqrU5og/?mibextid=wwXIfr" target="_blank">
+        🔎 Trần Phạm Minh Khang
+    </a>
+</li>
+ <li>
+    <a href="https://www.facebook.com/share/1ATahKkoXX/" target="_blank">
+        🔎  Ngọ Thị Thương
+    </a>
+</li>
+
+
+ <li>
+    <a href="https://www.facebook.com/share/1GWm73oP8p/" target="_blank">
+         🔎 Mai Nguyễn Hoàng Phúc
+    </a>
+</li>             
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 | Nhóm 5G lớp 12.2
+    </div>
+</footer>
+<script>
+function showPage(id){
+  document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));
+  event.target.classList.add("active");
+}
+</script>
+</body>
+</html>
+
+
